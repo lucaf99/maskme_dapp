@@ -1,0 +1,65 @@
+
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.841); 
+  color: white;
+}
+
+.image-border {
+  margin: 10px;
+  border: 5px solid white; 
+  border-radius: 5px; 
+  background-color: transparent; 
+}
+
+
+.container-centered {
+  background-color: rgba(0, 0, 0, 0.871);
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  height: calc(120vh - 56px); 
+  padding-top: 50px; 
+  box-sizing: border-box;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.webcam-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.webcam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  border: 5px solid white; 
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px; 
+  height: 300px; 
+  pointer-events: none;
+}
+
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
