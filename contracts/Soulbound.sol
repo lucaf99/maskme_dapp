@@ -19,7 +19,7 @@ contract Soulbound is ERC721, ERC721URIStorage {
         _tokenIdCounter.increment(); // Inizia da 1
     }
 
-    function safeMint(address to, string memory uri) public {
+    function safeMint(address to, string memory uri) public { // safeMint(address_to, cid_metadata)
         require(msg.sender == to, "You can only mint a token for yourself");
 
         // Controlla se l'utente ha già un token
@@ -33,7 +33,7 @@ contract Soulbound is ERC721, ERC721URIStorage {
         uint256 newTokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, newTokenId);
-        _setTokenURI(newTokenId, uri);
+        _setTokenURI(newTokenId, uri);  // Come URI viene settato il CID dei metadati 
 
         // Aggiorna la mappatura con il nuovo token ID
         _userTokens[to] = newTokenId;

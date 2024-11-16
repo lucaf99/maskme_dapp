@@ -37,4 +37,4 @@ else:
     raise ValueError("Nodo Principled BSDF non trovato nel materiale")
 
 output_path = base_path + 'mask.glb'
-bpy.ops.export_scene.gltf(filepath=output_path)
+bpy.ops.export_scene.gltf(filepath=output_path);
